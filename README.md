@@ -16,19 +16,31 @@ The following deliverables are provided:
 
 ### Deliverable 1: Pre-processing the Data for PCA
 
-The following is a final dataframe snapshot of all the cryptocurrencies being traded and mined:
-- 
+- The following is a final dataframe snapshot of all the cryptocurrencies being traded and mined:
+  - ![](Photos/Deliverable_1)
+
+- Get dummies was then utilized for the purpose of creating variables for text features:
+  - 
+
+- Finally, the data was standardized with StandardScaler():
+ - 
 
 ### Deliverable 2: Reducing Data Dimensions Using PCA
 
-In this deliverable, the Principal Component Analysis (PCA) algorithm has been applied to reduce the dimensions of our present dataframe to three pricipal components and then placed into its own new DataFrame, as shown below:
--
+- In this deliverable, the Principal Component Analysis (PCA) algorithm has first been been applied to reduce the dimensions of the data to only three principal components using fit_transform: 
+  - ![](Photos/Deliverable_2a)
+
+- Next, these components were and then placed into its own new DataFrame, as shown below:
+  - ![](Photos/Deliverable_2b)
 
 ### Deliverable 3: Clustering Cryptocurrencies Using K-means
 
 Within this deliverable, the K-algorithm was applied in order to cluster the cryptocurencies using the PCA data using the following steps:
-- Creating an elbow curveto identify the best K-value
+- Creating an elbow curve to identify the best K-value
+  - ![](Photos/Elbow_curve)
+
 - Making predictions on the cryptocurrency K-clusters
+  - 
 - Lastly, producing a new DataFrame with the same index as crypto_df, but has the columns:
     - Algorithm
     - ProofType
