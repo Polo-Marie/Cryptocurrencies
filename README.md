@@ -15,18 +15,16 @@ The following deliverables are provided:
 ## Deliverable Results
 
 ### Deliverable 1: Pre-processing the Data for PCA
-
 - The following is a final dataframe snapshot of all the cryptocurrencies being traded and mined:
-  - ![](Photos/Deliverable_1)
+  - ![](Photos/Deliverable_1_dataframe)
 
 - Get dummies was then utilized for the purpose of creating variables for text features:
-  - 
+  - ![](Deliverable_1_Get_Dummies)
 
 - Finally, the data was standardized with StandardScaler():
- - 
+ - ![](Deliverable_1_StandardScaler)
 
 ### Deliverable 2: Reducing Data Dimensions Using PCA
-
 - In this deliverable, the Principal Component Analysis (PCA) algorithm has first been been applied to reduce the dimensions of the data to only three principal components using fit_transform: 
   - ![](Photos/Deliverable_2a)
 
@@ -34,30 +32,39 @@ The following deliverables are provided:
   - ![](Photos/Deliverable_2b)
 
 ### Deliverable 3: Clustering Cryptocurrencies Using K-means
-
-Within this deliverable, the K-algorithm was applied in order to cluster the cryptocurencies using the PCA data using the following steps:
+To complete this deliverable, the K-algorithm was applied in order to cluster the cryptocurencies using the PCA data using the following steps:
 - Creating an elbow curve to identify the best K-value
-  - ![](Photos/Elbow_curve)
+  - ![](Photos/Deliverable_3a)
 
 - Making predictions on the cryptocurrency K-clusters
-  - 
+  - ![](Photos/Deliverable_3b)
 - Lastly, producing a new DataFrame with the same index as crypto_df, but has the columns:
-    - Algorithm
-    - ProofType
-    - TotalCoinsMined
-    - TotalCoinSupply
-    - PC 1
-    - PC 2
-    - PC 3
-    - CoinName
-    - Class
+  - Algorithm
+  - ProofType
+  - TotalCoinsMined
+  - TotalCoinSupply
+  - PC 1
+  - PC 2
+  - PC 3
+  - CoinName
+  - Class
+    - ![](Photos/Deliverable_3c)
 
 ### Deliverable 4: Visualizing Cryptocurrencies Results
+- A 3D scatter plot was created to plot the three clusters appropriate CoinName, Algorithm, hover_name and hover_data parameters upon hovering  data in the graph
+  - ![](Photos/Deliverable_4a)
 
-- Create a 3D scatter plot to plot the three clusters appropriate CoinName, Algorithm, hover_name and hover_data parameters upon hovering  data in the graph
-- Create another table of tradable currencies using the function hvplot.table()
-- Create another new DataFrame using the clustered_df index, and then adding the CoinName and Class to the new DataFrame
-- Create an hvplot where x = "TotalCoinsMined" and y = "TotalCoinSupply", and the data is organized on the graph by "Class". The information, such as the "CoinName" should display upon hovering over the data points.
+- Created another table of tradable currencies using the function hvplot.table()
+  - ![](Photos/Deliverable_4b)
+
+- Printed the total number of tradable currencies
+  - ![](Photos/Deliverable_4c)
+
+- Created another new DataFrame using the clustered_df index, and then adding the CoinName and Class to the new DataFrame
+  - ![](Photos/Deliverable_4d)
+
+- Created an hvplot where x = "TotalCoinsMined" and y = "TotalCoinSupply", and the data is organized on the graph by "Class". The information, such as the "CoinName" should display upon hovering over the data points.
+  - ![](Photos/Deliverable_4e)
 
 
 ## Conclusion
