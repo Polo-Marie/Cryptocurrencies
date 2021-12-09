@@ -19,10 +19,10 @@ The following deliverables are provided:
   - ![](Photos/Deliverable_1_dataframe.png)
 
 - Get dummies was then utilized for the purpose of creating variables for text features:
-  - ![](Deliverable_1_Get_Dummies.png)
+  - ![](Photos/Deliverable_1_Get_Dummies.png)
 
 - Finally, the data was standardized with StandardScaler():
- - ![](Deliverable_1_StandardScaler.png)
+ - ![](Photos/Deliverable_1_StandardScaler.png)
 
 ### Deliverable 2: Reducing Data Dimensions Using PCA
 - In this deliverable, the Principal Component Analysis (PCA) algorithm has first been been applied to reduce the dimensions of the data to only three principal components using fit_transform: 
