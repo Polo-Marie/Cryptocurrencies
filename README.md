@@ -48,6 +48,7 @@ To complete this deliverable, the K-algorithm was applied in order to cluster th
   - PC 3
   - CoinName
   - Class
+    
     - ![](Photos/Deliverable_3c.png)
 
 ### Deliverable 4: Visualizing Cryptocurrencies Results
